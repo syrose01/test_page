@@ -1,0 +1,33 @@
+body {
+    background-color : linen;
+}
+header {
+    margin-left : 30%;
+    width : 985px;
+    text-align : center;
+    background-color :rgb(153, 216, 167);
+}
+nav {
+    position : absolute;
+    text-align : center;
+    margin-left : 30%;
+    width : 250px;
+    height : 1000px;
+    float : left;
+    background-color :rgb(110, 153, 147)
+}
+section {
+    margin-left : 30%;
+}
+footer {
+    text-align : center;
+    clear : both;
+}
+li {
+    list-style-type : none;
+    text-align : center;
+    background-color :rgb(196, 219, 216)
+}
+nav p b {
+    background-color :rgb(196, 219, 216)
+}

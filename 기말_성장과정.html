@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>나무's 성장과정</title>
+    <script>
+        var files = ["media/장나무 3개월_1.jpg",
+            "media/장나무 3개월_2.jpg",
+            "media/장나무 3개월_3.jpg",
+            "media/장나무 3개월_4.jpg",
+            "media/장나무 3개월_5.jpg",
+            "media/장나무 3개월_6.jpg",
+            "media/장나무 3개월_7.jpg",
+            "media/장나무 3개월_8.jpg",
+            "media/장나무 3개월_9.jpg",
+            "media/장나무 3개월_10.jpg"
+        ]
+        var imgs = new Array();
+        for (var i = 0; i < files.length; i++) {
+            imgs[i] = new Image();
+            imgs[i].src = files[i];
+        }
+        var next = 1;
+        function change(img) {
+            img.src = imgs[next].src;
+            next++;
+            next %= imgs.length;
+        }
+        function print() {
+            document.getElementById("img").title = "클릭하면 다음 사진으로 넘어갑니다.";
+        }
+
+        var files_monkey = ["media/장나무 원숭이_1.jpg",
+            "media/장나무 원숭이_2.jpg",
+            "media/장나무 원숭이_3.jpg",
+            "media/장나무 원숭이_4.jpg",
+            "media/장나무 원숭이_5.jpg",
+            "media/장나무 원숭이_6.jpg",
+            "media/장나무 원숭이_7.jpg"]
+        var imgs_monkey = new Array();
+        for (var i = 0; i < files_monkey.length; i++) {
+            imgs_monkey[i] = new Image();
+            imgs_monkey[i].src = files_monkey[i];
+        }
+        var next_monkey = 1;
+        function change_monkey(img) {
+            img.src = imgs_monkey[next_monkey].src;
+            next_monkey++;
+            next_monkey %= imgs_monkey.length;
+        }
+        function print1() {
+            document.getElementById("img1").title = "클릭하면 다음 사진으로 넘어갑니다.";
+        }
+
+        var files_operation = ["media/장나무 수술_1.jpg",
+            "media/장나무 수술_2.jpg"];
+        var imgs_operation = new Array();
+        for (var i = 0; i < files_operation.length; i++) {
+            imgs_operation[i] = new Image();
+            imgs_operation[i].src = files_operation[i];
+        }
+        var next_operation = 1;
+        function change_operation(img) {
+            img.src = imgs_operation[next_operation].src;
+            next_operation++;
+            next_operation %= imgs_operation.length;
+        }
+        function print2() {
+            document.getElementById("img2").title = "클릭하면 다음 사진으로 넘어갑니다.";
+        }
+
+        var files_1 = ["media/장나무 1살_1.jpg",
+            "media/장나무 1살_2.jpg",
+            "media/장나무 1살_3.jpg",
+            "media/장나무 1살_4.jpg",
+            "media/장나무 1살_5.jpg",
+            "media/장나무 1살_6.jpg",
+            "media/장나무 1살_7.jpg",
+            "media/장나무 1살_8.jpg",
+            "media/장나무 1살_9.jpg",
+            "media/장나무 1살_10.jpg",];
+        var imgs_1 = new Array();
+        for (var i = 0; i < files_1.length; i++) {
+            imgs_1[i] = new Image();
+            imgs_1[i].src = files_1[i];
+        }
+        var next_1 = 1;
+        function change_1(img) {
+            img.src = imgs_1[next_1].src;
+            next_1++;
+            next_1 %= imgs_1.length;
+        }
+        function print3() {
+            document.getElementById("img3").title = "클릭하면 다음 사진으로 넘어갑니다.";
+        }
+
+        var files_2 = ["media/장나무 2살_1.jpg",
+            "media/장나무 2살_2.jpg",
+            "media/장나무 2살_3.jpg",
+            "media/장나무 2살_4.jpg",
+            "media/장나무 2살_5.jpg"];
+        var imgs_2 = new Array();
+        for (var i = 0; i < files_2.length; i++) {
+            imgs_2[i] = new Image();
+            imgs_2[i].src = files_2[i];
+        }
+        var next_2 = 1;
+        function change_2(img) {
+            img.src = imgs_2[next_2].src;
+            next_2++;
+            next_2 %= imgs_2.length;
+        }
+        function print4() {
+            document.getElementById("img4").title = "클릭하면 다음 사진으로 넘어갑니다.";
+        }
+    </script>
+
+    <style>
+        @import url(mystyle.css);
+
+        section {
+            text-align: center;
+            float: left;
+            margin-left: 40%;
+        }
+        
+        img:hover{
+            border : 5px dashed rgb(103, 134, 17);
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>나무의 성장과정</h1>
+    </header>
+
+    <section>
+        <p><b>3개월</b></p>
+        <img id="img" src="media/장나무 3개월_1.jpg" alt="." width="500" height="500" onclick="change(this)"
+            onmouseover="print()">
+        <p><b>원숭이 시기</b></p>
+        <img id="img1" src="media/장나무 원숭이_1.jpg" alt="." width="500" height="500" onclick="change_monkey(this)"
+            onmouseover="print1()">
+        <p><b>수술</b></p>
+        <img id="img2" src="media/장나무 수술_1.jpg" alt="." width="500" height="500" onclick="change_operation(this)"
+            onmouseover="print2()">
+        <p><b>1살</b></p>
+        <img id="img3" src="media/장나무 1살_1.jpg" alt="." width="500" height="500" onclick="change_1(this)"
+            onmouseover="print3()">
+        <p><b>2살(현재)</b></p>
+        <img id="img4" src="media/장나무 2살_1.jpg" alt="." width="500" height="500" onclick="change_2(this)"
+            onmouseover="print4()">
+    </section>
+
+    <footer>
+        <br>
+        <p>제작자 : 202011606 장선영 (나무 큰누나)</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>나무's 개인기</title>
+    <style>
+        @import url(mystyle.css);
+
+        video {
+            width: 700px;
+            height: 1000px;
+            margin-left : 250px;
+        }
+        section p {
+            margin-left : 350px;
+        }
+        #fixed {
+            position : fixed;
+            bottom : 500px;
+            right : 500px;
+            width : 100px;
+            padding : 5px;
+            background : rgb(247, 211, 211);
+            color : white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="up">나무의 개인기</h1>
+    </header>
+
+    <nav>
+        <a href="#sit">
+            <p>
+                <li>앉아</li>
+            </p>
+        </a>
+        <a href="#hand">
+            <p>
+                <li>손</li>
+            </p>
+        </a>
+        <a href="#엎드려">
+            <p>
+                <li>엎드려</li>
+            </p>
+        </a>
+        <a href="#하이파이브">
+            <p>
+                <li>하이파이브</li>
+            </p>
+        </a>
+    </nav>
+
+    <section>
+        <p id="sit"><b>앉아</b></p>
+        <video id="top" autoplay muted loop>
+            <source src="media/장나무 앉아.mov" type="video/mp4">
+        </video>
+
+        <p id="hand"><b>손</b></p>
+        <video autoplay muted loop>
+            <source src="media/장나무 손.mov" type="video/mp4">
+        </video>
+
+        <p id="엎드려"><b>엎드려</b></p>
+        <video autoplay muted loop>
+            <source src="media/장나무 엎드려.mov" type="video/mp4">
+        </video>
+
+        <p id="하이파이브"><b>하이파이브</b></p>
+        <video autoplay muted loop>
+            <source src="media/장나무 하이파이브.mov" type="video/mp4">
+        </video>
+        <div id="fixed">
+            <a href="#up">맨 위로</a>
+        </div>
+    </section>
+
+    <footer>
+        <br>
+        <p>제작자 : 202011606 장선영 (나무 큰누나)</p>
+    </footer>
+</body>
+
+</html>

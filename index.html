@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>최고다 장나무</title>
+    <script>
+        window.onload = function () {
+            var count = 0;
+            var image = document.getElementById('image');
+            var frames = ["media/장나무 메인화면_2.jpg",
+                "media/장나무 메인화면_3.jpg",
+                "media/장나무 메인화면_4.jpg",
+                "media/장나무 메인화면_5.jpg",
+                "media/장나무 메인화면_6.jpg"];
+            setInterval(function () {
+                image.src = frames[count % frames.length];
+                count = count + 1;
+            }, 1500);
+        };
+    </script>
+    <style>
+        @import url(mystyle.css);
+        #image{
+            margin-left : 260px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>장나무</h1>
+    </header>
+
+    <nav>
+        <p><b>종</b></p>
+        포메라니안
+        <br>
+        <p><b>생일</b></p>
+        2019.04.22
+        <p><b>성격</b></p>
+        사나움
+        <br>
+        사실은 센 척하는 겁쟁이
+        <p><b>특징</b></p>
+        미친듯한 귀여움
+        <br>
+        입 주변만 색깔이 다름
+        <br>
+        사회성 0%
+        <br>
+        오토바이 엄청 싫어함
+        <p>
+            <li><a href="기말_성장과정.html" target="_blank">나무의 성장과정</a></li>
+        </p>
+        <p>
+            <li><a href="기말_개인기.html" target="_blank">나무의 개인기</a></li>
+        </p>
+    </nav>
+
+    <section>
+        <img id="image" src="media/장나무 메인화면_1.jpg" width="730" height="1000">
+    </section>
+
+    <footer>
+        <br>
+        <p>제작자 : 202011606 장선영 (나무 큰누나)</p>
+    </footer>
+</body>
+
+</html>
